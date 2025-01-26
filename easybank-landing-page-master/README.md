@@ -6,7 +6,6 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 - [Frontend Mentor - Easybank landing page solution](#frontend-mentor---easybank-landing-page-solution)
   - [Table of contents](#table-of-contents)
-  - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
     - [Links](#links)
@@ -15,8 +14,6 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
     - [What I learned](#what-i-learned)
     - [Continued development](#continued-development)
   - [Acknowledgments](#acknowledgments)
-
-## Overview
 
 ### The challenge
 
@@ -28,7 +25,6 @@ Users should be able to:
 ### Screenshot
 
 ![alt text](<Screenshot (79).png>)
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
@@ -36,6 +32,8 @@ Users should be able to:
 - Live Site URL: [(https://kaleidoscopic-mousse-763a4f.netlify.app/)](Netlify)
 
 ## My process
+
+Started with the html file and added the functionality, started by creating the mobile vresion before moving to the desktop view of the website, had some issues with the hero section but was able to navigate through it
 
 ### Built with
 
@@ -48,24 +46,24 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I learnt that creating the mobile version before the desktop version is quite easier for me and a little more responsive than my other codes.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<article></article>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+show-menu {
 }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
+const navLink = document.querySelectorAll(".nav-link");
+const linkAction = () => {
+  const menuBar = document.getElementById("nav-menu");
+  menuBar.classList.remove("show-menu");
 };
+navLink.forEach((n) => n.addEventListener("click", linkAction));
 ```
 
 ### Continued development
@@ -74,6 +72,4 @@ I would like to improve my JS knowldege and advance more in the web space, i fou
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+All thanks to the leaders of web3brigde for creating this wonderful expereience and all thanks to Jehovah for the grace to find the program no matter my location.
