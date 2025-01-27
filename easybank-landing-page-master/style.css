@@ -347,6 +347,12 @@ footer ul li a {
     grid-template-columns: 150px;
     justify-content: center;
   }
+  .mockup-img3 {
+    display: flex;
+    width: 60%;
+    top: -15%;
+    right: -9%;
+  }
 }
 
 @media screen and (max-width: 576px) {
